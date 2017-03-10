@@ -20,12 +20,13 @@ USER_COLOR=$FG[067]
 if [[ "$USER" == "root" ]]; then
   USER_COLOR=$fg_bold[red]
 fi
-PROMPT="\
+
+PROMPT='\
 %{$USER_COLOR%}%n@$(box_name)%{$reset_color%} \
 %{$PROMPT_SUCCESS_COLOR%}%~%{$reset_color%}\
 %{$GIT_PROMPT_INFO%}$(git_prompt_info)$(virtualenv_prompt_info)\
 %{$GIT_DIRTY_COLOR%}$(git_prompt_status) %{$reset_color%}\
-%(?:%{$PROMPT_SUCCESS_COLOR%}ᐅ:%{$PROMPT_FAILURE_COLOR%}ᐅ)%{$reset_color%} "
+%(?:%{$PROMPT_SUCCESS_COLOR%}ᐅ:%{$PROMPT_FAILURE_COLOR%}ᐅ)%{$reset_color%} '
 
 ZSH_THEME_GIT_PROMPT_PREFIX=" ("
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$GIT_PROMPT_INFO%})"
