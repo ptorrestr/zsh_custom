@@ -2,7 +2,8 @@
 
 This repo contains some customisation (themes) for oh-my-zsh.
 
-## Install
+## Install
+
 Simply install oh-my-zsh and put this folder anywhere. Then add/modify the following line in your `.zshrc` file:
 
 ```bash
